@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Randomizador de Prendas</string>
+    <string name="welcome_title">¡Bienvenido!</string>
+    <string name="welcome_subtitle">Randomizador de Prendas</string>
+    <string name="welcome_description">Crea outfits únicos combinando tus prendas favoritas</string>
+    <string name="btn_continuar">Continuar</string>
+    <string name="randomizador_title">Randomizador de Outfits</string>
+    <string name="accesorio_cabeza">Accesorio de Cabeza</string>
+    <string name="polera">Polera</string>
+    <string name="pantalon">Pantalón</string>
+    <string name="zapatos">Zapatos</string>
+    <string name="btn_cargar_prendas">Cargar Prendas desde API</string>
+    <string name="btn_randomizar">Randomizar Outfit</string>
+    <string name="hint_seleccionar">Seleccione una opción</string>
+    <string name="cargando">Cargando...</string>
+    <string name="error_cargar">Error al cargar prendas</string>
+    <string name="sin_conexion">Sin conexión a internet</string>
+    <string name="prendas_cargadas">Prendas cargadas exitosamente</string>
+    <string name="cargar_prendas_primero">Por favor, cargue las prendas primero</string>
+    <string name="outfit_randomizado">¡Outfit randomizado!</string>
+</resources>
