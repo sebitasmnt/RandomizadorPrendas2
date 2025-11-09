@@ -13,7 +13,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="80dp"
-        android:src="@android:drawable/ic_menu_myplaces"
+        android:src="@drawable/ic_accessory"
         android:contentDescription="@string/app_name"
         android:tint="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"

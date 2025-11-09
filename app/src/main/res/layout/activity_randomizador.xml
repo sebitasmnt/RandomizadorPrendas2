@@ -85,7 +85,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_seleccionar"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        app:startIconDrawable="@android:drawable/ic_menu_recent_history">
+                        app:startIconDrawable="@drawable/ic_accessory">
 
                         <AutoCompleteTextView
                             android:id="@+id/auto_complete_accesorio"
@@ -103,7 +103,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Agregar desde cámara"
                         android:textSize="12sp"
-                        app:icon="@android:drawable/ic_menu_camera"
+                        app:icon="@drawable/ic_camera"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
                 </LinearLayout>
@@ -147,7 +147,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_seleccionar"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        app:startIconDrawable="@android:drawable/ic_menu_compass">
+                        app:startIconDrawable="@drawable/ic_shirt">
 
                         <AutoCompleteTextView
                             android:id="@+id/auto_complete_polera"
@@ -165,7 +165,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Agregar desde cámara"
                         android:textSize="12sp"
-                        app:icon="@android:drawable/ic_menu_camera"
+                        app:icon="@drawable/ic_camera"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
                 </LinearLayout>
@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_seleccionar"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        app:startIconDrawable="@android:drawable/ic_menu_slideshow">
+                        app:startIconDrawable="@drawable/ic_pants">
 
                         <AutoCompleteTextView
                             android:id="@+id/auto_complete_pantalon"
@@ -227,7 +227,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Agregar desde cámara"
                         android:textSize="12sp"
-                        app:icon="@android:drawable/ic_menu_camera"
+                        app:icon="@drawable/ic_camera"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
                 </LinearLayout>
@@ -271,7 +271,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_seleccionar"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+                        app:startIconDrawable="@drawable/ic_shoes">
 
                         <AutoCompleteTextView
                             android:id="@+id/auto_complete_zapatos"
@@ -289,7 +289,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Agregar desde cámara"
                         android:textSize="12sp"
-                        app:icon="@android:drawable/ic_menu_camera"
+                        app:icon="@drawable/ic_camera"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
                 </LinearLayout>
@@ -311,7 +311,7 @@
         android:text="@string/btn_cargar_prendas"
         android:textSize="16sp"
         app:cornerRadius="12dp"
-        app:icon="@android:drawable/ic_menu_upload"
+        app:icon="@drawable/ic_upload"
         app:iconGravity="textStart"
         app:layout_constraintBottom_toTopOf="@id/btn_randomizar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -329,7 +329,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:cornerRadius="12dp"
-        app:icon="@android:drawable/ic_menu_shuffle"
+        app:icon="@drawable/ic_shuffle"
         app:iconGravity="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
