@@ -11,15 +11,28 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 object PrendasApiClient {
     // URL base de la API ASOS RapidAPI
     private const val BASE_URL = "https://asos2.p.rapidapi.com/"
-    private const val RAPIDAPI_KEY = "7533c19f41msh7bff547e6cd4e3dp18a85cjsnb8b8a66c1dcb"
+    
+    // IMPORTANTE: Para usar la API, necesitas configurar tus propias credenciales
+    // Opción 1: Usar variables de entorno o BuildConfig (recomendado)
+    // Opción 2: Crear un archivo local.properties y agregar:
+    // RAPIDAPI_KEY=tu_api_key_aqui
+    // RAPIDAPI_HOST=asos2.p.rapidapi.com
+    // Luego leerlo en tiempo de ejecución
+    // 
+    // Por ahora, la aplicación funcionará con datos de ejemplo si la API no está configurada
+    private val RAPIDAPI_KEY: String? = null // Configurar tu API key aquí o usar BuildConfig
     private const val RAPIDAPI_HOST = "asos2.p.rapidapi.com"
 
     // Interceptor para agregar headers de RapidAPI
     private val apiKeyInterceptor = Interceptor { chain ->
         val original = chain.request()
         val requestBuilder = original.newBuilder()
-            .header("x-rapidapi-key", RAPIDAPI_KEY)
-            .header("x-rapidapi-host", RAPIDAPI_HOST)
+        // Solo agregar headers si la API key está configurada
+        RAPIDAPI_KEY?.let {
+            requestBuilder
+                .header("x-rapidapi-key", it)
+                .header("x-rapidapi-host", RAPIDAPI_HOST)
+        }
         val request = requestBuilder.build()
         chain.proceed(request)
     }
